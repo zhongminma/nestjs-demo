@@ -9,4 +9,8 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+  @Get('msg')
+  getMessage(): string {
+    return "Message from message route with '/msg'";
+  }
 }
